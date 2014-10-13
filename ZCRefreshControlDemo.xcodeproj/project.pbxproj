@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		6BABAE2D19EB7B1D0019161F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BABAE2C19EB7B1D0019161F /* main.m */; };
 		6BABAE3019EB7B1D0019161F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BABAE2F19EB7B1D0019161F /* AppDelegate.m */; };
-		6BABAE3319EB7B1D0019161F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BABAE3219EB7B1D0019161F /* ViewController.m */; };
 		6BABAE3619EB7B1D0019161F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BABAE3419EB7B1D0019161F /* Main.storyboard */; };
 		6BABAE3819EB7B1D0019161F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BABAE3719EB7B1D0019161F /* Images.xcassets */; };
 		6BABAE3B19EB7B1D0019161F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BABAE3919EB7B1D0019161F /* LaunchScreen.xib */; };
 		6BABAE4719EB7B1D0019161F /* ZCRefreshControlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BABAE4619EB7B1D0019161F /* ZCRefreshControlDemoTests.m */; };
+		6BABAE5619EB7B770019161F /* ZCRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BABAE5519EB7B770019161F /* ZCRefreshControl.m */; };
+		6BABAE5919EBB5910019161F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BABAE5819EBB5910019161F /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		6BABAE2C19EB7B1D0019161F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BABAE2E19EB7B1D0019161F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BABAE2F19EB7B1D0019161F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6BABAE3119EB7B1D0019161F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6BABAE3219EB7B1D0019161F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6BABAE3519EB7B1D0019161F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BABAE3719EB7B1D0019161F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BABAE3A19EB7B1D0019161F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6BABAE4019EB7B1D0019161F /* ZCRefreshControlDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCRefreshControlDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BABAE4519EB7B1D0019161F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BABAE4619EB7B1D0019161F /* ZCRefreshControlDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCRefreshControlDemoTests.m; sourceTree = "<group>"; };
+		6BABAE5419EB7B770019161F /* ZCRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRefreshControl.h; sourceTree = "<group>"; };
+		6BABAE5519EB7B770019161F /* ZCRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRefreshControl.m; sourceTree = "<group>"; };
+		6BABAE5719EBB5910019161F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		6BABAE5819EBB5910019161F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		6BABAE1E19EB7B1D0019161F = {
 			isa = PBXGroup;
 			children = (
+				6BABAE5019EB7B600019161F /* ZCRefreshControl */,
 				6BABAE2919EB7B1D0019161F /* ZCRefreshControlDemo */,
 				6BABAE4319EB7B1D0019161F /* ZCRefreshControlDemoTests */,
 				6BABAE2819EB7B1D0019161F /* Products */,
@@ -81,10 +85,10 @@
 		6BABAE2919EB7B1D0019161F /* ZCRefreshControlDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6BABAE5719EBB5910019161F /* TableViewController.h */,
+				6BABAE5819EBB5910019161F /* TableViewController.m */,
 				6BABAE2E19EB7B1D0019161F /* AppDelegate.h */,
 				6BABAE2F19EB7B1D0019161F /* AppDelegate.m */,
-				6BABAE3119EB7B1D0019161F /* ViewController.h */,
-				6BABAE3219EB7B1D0019161F /* ViewController.m */,
 				6BABAE3419EB7B1D0019161F /* Main.storyboard */,
 				6BABAE3719EB7B1D0019161F /* Images.xcassets */,
 				6BABAE3919EB7B1D0019161F /* LaunchScreen.xib */,
@@ -117,6 +121,15 @@
 				6BABAE4519EB7B1D0019161F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BABAE5019EB7B600019161F /* ZCRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				6BABAE5419EB7B770019161F /* ZCRefreshControl.h */,
+				6BABAE5519EB7B770019161F /* ZCRefreshControl.m */,
+			);
+			path = ZCRefreshControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BABAE3319EB7B1D0019161F /* ViewController.m in Sources */,
 				6BABAE3019EB7B1D0019161F /* AppDelegate.m in Sources */,
+				6BABAE5619EB7B770019161F /* ZCRefreshControl.m in Sources */,
+				6BABAE5919EBB5910019161F /* TableViewController.m in Sources */,
 				6BABAE2D19EB7B1D0019161F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
